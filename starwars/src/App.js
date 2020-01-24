@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
-import Card from './Card';
+import Cards from './Cards';
 
 const App = () => {
 const [data, setData] = useState([])
@@ -15,14 +15,11 @@ useEffect(() => {
     console.log('Data not returned', error);
   })
 }, [])
-
-
-
   return (
     <div className="App">
      {data.map((data) => {
                     // console.log('map', data);
-                    return <Card data={data}
+                    return <Cards data={data}
                     name={data.name}
                     birth_year={data.birth_year}                  
                     height={data.height}
