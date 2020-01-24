@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a Javascript Library.  The problem react tries to solve is the ability to deal with data that is constantly changing without having to write a lot of complicated code.  the useState feature is exactly what that is.  you can set and change data and values with user input, which then provides an opportunity to create and use meaningful data.
+
 - [ ] What does it mean to _think_ in react?
+
+Think in react is how react makes you think about how data flows, and take advantage of the unique features, like hooks.  
 
 - [ ] Describe state.
 
+State in react is data that can change, possibly more than once.  
+
 - [ ] Describe props.
 
+Props are special properties in react that allow you to pass data to different components, usually in a single direction.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are when data is affected outside the usual scope of a function.  You use the “useState” and “setState” features to sync the data.
 
 ## Project Set Up
 
