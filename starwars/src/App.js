@@ -20,8 +20,15 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <Card data={data}/>
+     {data.map((data) => {
+                    // console.log('map', data);
+                    return <Card data={data}
+                    name={data.name}
+                    birth_year={data.birth_year}                  
+                    height={data.height}
+                    mass={data.mass}
+                    />
+                })}
     </div>
   );
 }
